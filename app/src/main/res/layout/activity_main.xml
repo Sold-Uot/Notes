@@ -8,14 +8,16 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/ubuntu_bold"
-        android:includeFontPadding="false"
 
+        android:includeFontPadding="false"
         android:text="@string/MyNote"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/_20sdp"
@@ -23,11 +25,103 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--    <SearchView-->
+
+
+<!--        android:id="@+id/searchView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:background="@drawable/color_searchview_radius"-->
+<!--        android:searchHintIcon="@color/colorWhite"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" >-->
+
+<!--    </SearchView>-->
+
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/color_searchview_radius"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@null"
+            android:fontFamily="@font/ubuntu"
+            android:hint="@string/search_my_note"
+            android:imeOptions="actionDone"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_14sdp"
+
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:layout_marginTop="246dp"
+        android:background="@drawable/color_and_low_icon"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/AddNote"
+
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_30sdp"
+
+            app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+        <ImageView
+            android:id="@+id/imageAddNote"
+
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_30sdp"
+
+            app:srcCompat="@drawable/ic_baseline_image_24" />
+
+        <ImageView
+            android:id="@+id/linkAddNote"
+
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_30sdp"
+
+            app:srcCompat="@drawable/ic_baseline_language_24" />
+
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

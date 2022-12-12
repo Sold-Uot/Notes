@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Notes/app/src/main/res/drawable/color_and_low_icon.xml" value="0.308" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/color_searchview_radius.xml" value="0.376" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.2245" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.2245" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.308" />
         <entry key="..\:/Notes/app/src/main/res/font/font.xml" value="0.246875" />
-        <entry key="..\:/Notes/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Notes/app/src/main/res/layout/activity_main.xml" value="0.17" />
       </map>
     </option>
   </component>
