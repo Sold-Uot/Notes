@@ -5,11 +5,17 @@
       <map>
         <entry key="..\:/Notes/app/src/main/res/drawable/color_and_low_icon.xml" value="0.308" />
         <entry key="..\:/Notes/app/src/main/res/drawable/color_searchview_radius.xml" value="0.376" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.377" />
         <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.2245" />
         <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_image_24.xml" value="0.2245" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.377" />
         <entry key="..\:/Notes/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.308" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/ic_round_arrow_back_ios_new_24.xml" value="0.377" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/main_add_note.xml" value="0.377" />
+        <entry key="..\:/Notes/app/src/main/res/drawable/yellow_radius.xml" value="0.376" />
         <entry key="..\:/Notes/app/src/main/res/font/font.xml" value="0.246875" />
-        <entry key="..\:/Notes/app/src/main/res/layout/activity_main.xml" value="0.17" />
+        <entry key="..\:/Notes/app/src/main/res/layout/activity_creat_norte.xml" value="0.2" />
+        <entry key="..\:/Notes/app/src/main/res/layout/activity_main.xml" value="0.21" />
       </map>
     </option>
   </component>

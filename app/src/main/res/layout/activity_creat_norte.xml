@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CreatNorteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_10sdp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+
+            <ImageView
+
+                android:id="@+id/imageSave"
+                android:layout_width="@dimen/_35sdp"
+
+
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_round_arrow_back_ios_new_24"
+                app:tint="@color/colorIcons" />
+
+            <ImageView
+
+                android:id="@+id/imageSubmit"
+                android:layout_width="@dimen/_35sdp"
+
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="@dimen/_15sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_round_done_24"
+                app:tint="@color/colorIcons" />
+
+            <EditText
+                android:id="@+id/namer"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/color_searchview_radius"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu_medium"
+                android:hint="Название заметки"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColorHint="@color/colorTextHint"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageSave" />
+
+            <EditText
+                android:id="@+id/podtext"
+                android:layout_width="353dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="@dimen/_33sdp"
+
+
+                android:background="@drawable/color_searchview_radius"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu_medium"
+
+                android:hint="Подтекст заметок"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:textColorHint="@color/colorTextHint"
+                app:layout_constraintEnd_toEndOf="@+id/namer"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="8dp"
+                android:layout_height="49dp"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/yellow_radius"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/namer" />
+
+            <EditText
+                android:id="@+id/textNote"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/color_searchview_radius"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Текст заметок..."
+
+                android:gravity="top"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:paddingVertical="@dimen/_5sdp"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/podtext" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
