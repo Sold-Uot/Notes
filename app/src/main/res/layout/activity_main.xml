@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".MainActivity">
+    tools:context=".view.activity.MainActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -129,7 +129,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageAddNoteMain"
         android:layout_width="62dp"
         android:layout_height="65dp"
         android:background="@drawable/main_add_note"
@@ -142,7 +142,7 @@
         app:tint="@color/colorPrimaryDark" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rec"
+        android:id="@+id/RecyclerVIew"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"

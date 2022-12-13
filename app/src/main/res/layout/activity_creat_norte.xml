@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
-    tools:context=".CreatNorteActivity">
+    tools:context=".view.activity.CreatNorteActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,37 +21,39 @@
             android:animateLayoutChanges="true">
 
 
-            <ImageView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linerIcon"
+                android:orientation="horizontal">
 
-                android:id="@+id/imageSave"
-                android:layout_width="@dimen/_35sdp"
+                <ImageView
 
+                    android:id="@+id/imageBack"
+                    android:layout_width="@dimen/_30sdp"
 
-                android:layout_height="@dimen/_35sdp"
-                android:layout_margin="@dimen/_15sdp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_round_arrow_back_ios_new_24"
-                app:tint="@color/colorIcons" />
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    app:srcCompat="@drawable/ic_round_arrow_back_ios_new_24"
+                    app:tint="@color/colorIcons" />
 
-            <ImageView
+                <ImageView
 
-                android:id="@+id/imageSubmit"
-                android:layout_width="@dimen/_35sdp"
-
-                android:layout_height="@dimen/_35sdp"
-                android:layout_margin="@dimen/_15sdp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/ic_round_done_24"
-                app:tint="@color/colorIcons" />
+                    android:id="@+id/imageSubmit"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginLeft="@dimen/_205sdp"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    app:srcCompat="@drawable/ic_round_done_24"
+                    app:tint="@color/colorIcons" />
+            </LinearLayout>
 
             <EditText
                 android:id="@+id/namer"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginHorizontal="@dimen/_15sdp"
-                android:layout_marginTop="28dp"
                 android:background="@drawable/color_searchview_radius"
                 android:ems="10"
                 android:fontFamily="@font/ubuntu_medium"
@@ -60,9 +62,10 @@
                 android:minHeight="48dp"
                 android:paddingHorizontal="@dimen/_15sdp"
                 android:textColorHint="@color/colorTextHint"
+                android:textSize="@dimen/_18sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageSave" />
+                app:layout_constraintTop_toBottomOf="@+id/linerIcon" />
 
             <EditText
                 android:id="@+id/podtext"
@@ -95,7 +98,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/namer" />
 
             <EditText
-                android:id="@+id/textNote"
+                android:id="@+id/inputNote"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
                 android:layout_marginStart="16dp"
